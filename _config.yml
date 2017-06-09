@@ -1,9 +1,13 @@
 theme: jekyll-theme-cayman
 repository: superyaooo/Blog
 
+# Setup
 title: Coding & Blogging
 subtitle: beep boop beep beep boop...
 description: My tech blog via Github
-name: Yao Wang
-twitter_username: YaoWDev
-github_username:  superyaooo
+baseurl: /Blog
+site-url: https://github.com/superyaooo/Blog
+
+# Author
+author-name: Yao Wang
+author-url: http://yaowangdev.com/
