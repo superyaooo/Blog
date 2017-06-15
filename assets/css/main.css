@@ -1,0 +1,14 @@
+a:hover {
+    text-decoration: none;
+}
+
+.tag {
+    background-color: #ffe6e6;
+    padding: .3em .6em .3em .6em;
+    margin-right: .5em;
+    border-radius: 5%;
+}
+
+.tag:hover {
+    font-weight: bold;
+}
