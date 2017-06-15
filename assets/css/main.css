@@ -2,13 +2,16 @@ a:hover {
     text-decoration: none;
 }
 
-.tag {
+div .tag {
+    display: inline-block;
     background-color: #ffe6e6;
-    padding: .3em .6em .3em .6em;
+    padding: .3em;
     margin-right: .5em;
     border-radius: 5%;
+    transition: all 0.3s ease 0s;
+    overflow: hidden;
 }
 
 .tag:hover {
-    font-weight: bold;
+    transform: scale(1.1);
 }

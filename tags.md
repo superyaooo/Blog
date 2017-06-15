@@ -2,21 +2,23 @@
 layout: default
 title: Search by Tags
 ---
-<p>
+<div>
 {% for tag in site.tags %}
-    <a href="#{{ tag[0] | slugify }}" class = "tag">{{ tag[0] }}</a>
+    <div class = "tag"><a href="#{{ tag[0] | slugify }}">{{ tag[0] }}</a></div>
 {% endfor %}
-</p>
+</div>
+
+<br/>
 
 <div>
 {% for tag in site.tags %}
-    <h2 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h2>
+    <h3 id="{{ tag[0] | slugify }}">{{ tag[0] }}</h3>
     <ul>
     {% for post in tag[1] %}
         <a href="{{ site.baseurl }}{{ post.url }}">
             <li>
-                {{ post.title }}
-                <small>{{ post.date | date_to_string }}</small>
+                <span>{{ post.title }}</span>
+                <small>{{ post.date | date_to_long_string }}</small>
             </li>
         </a>
     {% endfor %}
