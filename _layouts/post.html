@@ -8,7 +8,7 @@
       <small>Tags:</small>
       {% for tag in page.tags %}
       <small class = "tag">
-          <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}"> &raquo; {{ tag }}</a>
+          <a href="{{ site.baseurl }}/tags#{{ tag | slugify }}"> &raquo; {{ tag }}</a>
       </small>
       {% endfor %}
 
