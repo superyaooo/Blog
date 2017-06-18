@@ -1,4 +1,3 @@
-theme: jekyll-theme-cayman
 repository: superyaooo/Blog  # needed to avoid "No repo name found." error when running jekyll locally on windows
 
 # Setup

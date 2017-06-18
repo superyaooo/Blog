@@ -1,9 +1,16 @@
 ---
-layout: default
+layout: home
 title: Home
 home: true
 ---
 
-
-&#10084;
-Welcome to my blog!
+<div class = "nav-block">
+{% for page in site.pages %}
+    {% if page.home %}
+    {% else %}
+        {% if page.title %}
+            <a href = "{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+</div>

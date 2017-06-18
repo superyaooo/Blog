@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About this blog
+title: About &#10084;
 ---
 
 This blog is built via Github pages.

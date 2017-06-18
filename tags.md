@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Search by Tags
+title: Search by Tags &there4;
 ---
 <div>
 {% for tag in site.tags %}
