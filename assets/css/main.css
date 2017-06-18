@@ -1,17 +1,20 @@
 a:hover {
     text-decoration: none;
+    color: #A2D9CE;
 }
 
-div .tag {
+.tag {
     display: inline-block;
-    background-color: #ffe6e6;
-    padding: .3em;
+    border: 1px solid black;
+    padding: .3em .5em;
     margin-right: .5em;
-    border-radius: 5%;
-    transition: all 0.3s ease 0s;
-    overflow: hidden;
+    border-radius: 3%;
+}
+
+.tag > a, .post-date{
+    color: #424949;
 }
 
 .tag:hover {
-    transform: scale(1.1);
+    background-color: #e8f0f7;
 }

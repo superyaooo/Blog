@@ -1,8 +1,18 @@
 {% include head.html %}
 
   <section class="main-content">
-      <h3>{{ page.title }}</h3>
+      <div>
+          <h2>{{ page.title }}</h2>
+      </div>
+      <small>Date: {{ page.date | date: "%B %-d, %Y" }}</small> ||
+      <small>Tags:</small>
+      {% for tag in page.tags %}
+      <small class = "tag">
+          <a href="{{ site.baseurl }}/tags/#{{ tag | slugify }}"> &raquo; {{ tag }}</a>
+      </small>
+      {% endfor %}
 
+<hr>
       {{ content }}
   </section>
 
