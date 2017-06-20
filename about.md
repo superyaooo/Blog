@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About &#10084;
+title: About &hearts;
 ---
 
 This blog is built via Github pages.
