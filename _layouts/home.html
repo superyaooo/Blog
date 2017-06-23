@@ -1,6 +1,18 @@
 
 {% include head.html %}
 
+<div class = "nav-block">
+{% assign pages = site.pages | sort: 'index' %}
+{% for page in pages %}
+    {% if page.home %}
+    {% else %}
+        {% if page.title %}
+            <a href = "{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+</div>
+
       {{ content }}
 
 {% include foot.html %}
