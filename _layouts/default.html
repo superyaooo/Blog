@@ -2,7 +2,10 @@
 {% include head.html %}
 
     <section class="main-content">
-      <h2>{{ page.title }}</h2>
+        {% if page.allposts %}
+        {% else %}
+            <h2>{{ page.title }}</h2>
+        {% endif %}
 
       {{ content }}
     </section>

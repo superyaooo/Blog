@@ -19,7 +19,7 @@ index: 2
     <ul>
     {% for post in tag[1] %}
         <li>
-            <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}
+            <a href="{{ site.baseurl }}{{ post.url }}"><span class="post-title">{{ post.title }}</span>
             <small class = "post-date">{{ post.date | date: "%B %-d, %Y" }}</small>
             </a>
         </li>
