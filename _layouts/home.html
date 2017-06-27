@@ -1,7 +1,8 @@
-
 {% include head.html %}
 
-<div class = "nav-block">
+{% include header.html %}
+
+<div class = "nav-block" role="navigation">
 {% assign pages = site.pages | sort: 'index' %}
 {% for page in pages %}
     {% if page.home %}

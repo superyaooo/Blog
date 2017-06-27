@@ -24,6 +24,24 @@ a:hover {
     padding: 2% 3%;
 }
 
+.page-header h1 {
+    margin: auto;
+    padding: 0.5%;
+    font-size: 3.5em;
+}
+
+.page-header h2 {
+    margin: auto;
+    padding: 0.5% 3%;
+    font-size: 1.5em;
+    font-style: italic;
+    font-weight: normal;
+}
+
+.page-header a:not(:hover) {
+    color: #404040;
+}
+
 .main-content {
     padding: 2% 3%;
     margin: 1% 5%;
@@ -48,24 +66,6 @@ footer {
     width: 100%;
     /* Set the fixed height of the footer here */
     height: 70px;
-}
-
-.page-header h1 {
-    margin: auto;
-    padding: 0.5%;
-    font-size: 3.5em;
-}
-
-.page-header a:not(:hover) {
-    color: #404040;
-}
-
-.page-header h2 {
-    margin: auto;
-    padding: 0.5% 3%;
-    font-size: 1.5em;
-    font-style: italic;
-    font-weight: normal;
 }
 
 .nav-block {
@@ -138,25 +138,100 @@ footer {
     background-color: #e8f0f7;
 }
 
-.nav-bar ul {
-    list-style: none;
+nav {
+    /*padding: 1% 2%;*/
+    background-color: lightblue;
+    display: flex;
+
+    /*display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;*/
 }
+
+nav > h1 {
+    width: 50%;
+    background-color: pink;
+    font-size: 3.5em;
+    margin: 0;
+    padding: .5em 1em;
+}
+
+nav > div {
+    width: 50%;
+}
+
+.navbar {
+    list-style: none;
+    background-color: red;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 2em 1em;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.navbar a {
+    padding: 1em;
+}
+
 
 @media screen and (min-width: 760px) and (max-width: 1195px)
 {
-    .page-header h1 { font-size: 2.5em; }
+    .page-header h1, nav > h1 { font-size: 2.5em; }
     .nav-block a { font-size: 1.5em; }
+
+    /*.navbar {
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        text-align: right;
+    }*/
+
+    /*TODO*/
 }
 
 @media screen and (max-width: 759px)
 {
     .page-header { text-align: center; }
-    .page-header h1 { font-size: 2em; }
-    .page-header h2 { font-size: 1em; }
+    .page-header h1, nav > h1 { font-size: 2em; }
+    .page-header h2, .navbar { font-size: 1em; }
     .main-content h2 { font-size: 1.7em; }
 
     .nav-block a {
         font-size: 1.5em;
         width: 65%;
     }
+
+    nav { display: inline; }
+
+    nav > h1, nav > div { width: 100%; }
+
+    nav > h1, .navbar {
+        padding: 0;
+        text-align: center;
+    }
+
+    .navbar {
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+    }
+
+    .navbar li {
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+
+    .navbar li:last-of-type { border-bottom: none; }
 }
