@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    margin: 1%;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
     color: #404040;
     /* Margin bottom by footer height */
@@ -16,13 +16,9 @@ a {
     color: #6897bb;
 }
 
-a:hover {
-    color: #A2D9CE;
-}
+a:hover { color: #A2D9CE; }
 
-.page-header {
-    padding: 2% 3%;
-}
+.page-header { padding: 2% 3%; }
 
 .page-header h1 {
     margin: auto;
@@ -38,26 +34,18 @@ a:hover {
     font-weight: normal;
 }
 
-.page-header a:not(:hover) {
-    color: #404040;
-}
+.page-header a:not(:hover) { color: #404040; }
 
 .main-content {
     padding: 2% 3%;
     margin: 1% 5%;
 }
 
-.main-content h2 {
-    font-size: 2em;
-}
+.main-content h2 { font-size: 2em; }
 
-.main-content h3 {
-    font-size: 1.5em;
-}
+.main-content h3 { font-size: 1.5em; }
 
-.main-content p, .post-title {
-    font-size: 1.3em;
-}
+.main-content p, .post-title { font-size: 1.3em; }
 
 footer {
     text-align: center;
@@ -103,9 +91,7 @@ footer {
     color: #344e86;
 }
 
-.nav-block a:hover {
-    background-color: #5a5a5a;
-}
+.nav-block a:hover { background-color: #5a5a5a; }
 
 .excerpt-block {
     background-color: #f7f7f7;
@@ -113,13 +99,9 @@ footer {
     padding: 10px 20px 20px 20px;
 }
 
-.excerpt-block h3, .excerpt-block p {
-    margin: 10px 0;
-}
+.excerpt-block h3, .excerpt-block p { margin: 10px 0; }
 
-.excerpt-block:nth-child(2n) {
-    background-color: #dfe3ee;
-}
+.excerpt-block:nth-child(2n) { background-color: #dfe3ee; }
 
 .tag {
     display: inline-block;
@@ -130,45 +112,29 @@ footer {
     border-radius: 16px;
 }
 
-.tag > a, .post-date{
-    color: #424949;
-}
+.tag > a, .post-date{ color: #424949; }
 
-.tag:hover {
-    background-color: #e8f0f7;
-}
+.tag:hover { background-color: #e8f0f7; }
 
 nav {
-    /*padding: 1% 2%;*/
-    background-color: lightblue;
     display: flex;
-
-    /*display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
-    justify-content: space-around;*/
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    background-color: #f7f7f7;
 }
 
-nav > h1 {
-    width: 50%;
-    background-color: pink;
-    font-size: 3.5em;
+nav a:not(:hover) { color: #404040; }
+
+nav h1 {
+    font-size: 3em;
     margin: 0;
     padding: .5em 1em;
 }
 
-nav > div {
-    width: 50%;
-}
+nav > div { width: 50%; }
 
 .navbar {
     list-style: none;
-    background-color: red;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 0;
     padding: 2em 1em;
 
@@ -182,29 +148,33 @@ nav > div {
     justify-content: flex-end;
 }
 
-.navbar a {
-    padding: 1em;
-}
+.navbar a { padding: .7em; }
 
 
 @media screen and (min-width: 760px) and (max-width: 1195px)
 {
-    .page-header h1, nav > h1 { font-size: 2.5em; }
+    .page-header h1, nav h1 { font-size: 2.5em; }
     .nav-block a { font-size: 1.5em; }
 
-    /*.navbar {
-        -webkit-flex-flow: column wrap;
-        flex-flow: column wrap;
-        text-align: right;
-    }*/
+    nav { display: block; }
 
-    /*TODO*/
+    nav > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav h1, .navbar { padding: 10px; }
+
+    .navbar {
+        justify-content: space-around;
+        background-color: #dfe3ee;
+    }
 }
 
 @media screen and (max-width: 759px)
 {
     .page-header { text-align: center; }
-    .page-header h1, nav > h1 { font-size: 2em; }
+    .page-header h1, nav h1 { font-size: 2em; }
     .page-header h2, .navbar { font-size: 1em; }
     .main-content h2 { font-size: 1.7em; }
 
@@ -213,18 +183,19 @@ nav > div {
         width: 65%;
     }
 
-    nav { display: inline; }
-
-    nav > h1, nav > div { width: 100%; }
-
-    nav > h1, .navbar {
-        padding: 0;
+    nav {
+        display: block;
         text-align: center;
     }
 
+    nav > div { width: 100%; }
+    nav h1 { padding: 10px; }
+
     .navbar {
+        padding: 0;
         -webkit-flex-flow: column wrap;
         flex-flow: column wrap;
+        background-color: #dfe3ee;
     }
 
     .navbar li {

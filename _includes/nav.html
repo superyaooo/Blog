@@ -1,13 +1,11 @@
-<!-- <div class = "page-header"> -->
-  <!-- <h1><a href = "{{ site.baseurl }}/">{{ site.title }}</a></h1> -->
-<!-- </div> -->
-
 <nav role="navigation">
-    <h1><a href = "{{ site.baseurl }}/">{{ site.title }}</a></h1>
-    
+    <div>
+        <h1><a href = "{{ site.baseurl }}/">{{ site.title }}</a></h1>
+    </div>
+
     <div>
         <ul class="navbar">
-          <li><a href="{{ site.baseurl }}/">Home</a></li>
+          <li><a href="{{ site.baseurl }}/">Home &#9676;</a></li>
           {% assign pages = site.pages | sort: 'index' %}
           {% for page in pages %}
               {% if page.home %}
