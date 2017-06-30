@@ -4,11 +4,13 @@
 
     <section class="main-content">
         {% if page.allposts %}
+        <!-- skip page title if allposts page -->
         {% else %}
             <h2>{{ page.title }}</h2>
         {% endif %}
 
-      {{ content }}
+        {{ content }}
+
     </section>
 
 {% include foot.html %}

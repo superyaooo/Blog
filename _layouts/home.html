@@ -2,18 +2,17 @@
 
 {% include header.html %}
 
-<div class = "nav-block" role="navigation">
-{% assign pages = site.pages | sort: 'index' %}
-{% for page in pages %}
-    {% if page.home %}
-    {% else %}
-        {% if page.title %}
-            <a href = "{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+    <div class = "nav-block" role="navigation">
+    {% assign pages = site.pages | sort: 'index' %}
+    {% for page in pages %}
+        {% if page.home %}
+        <!-- do not display home nav block on homepage -->
+        {% else %}
+            {% if page.title %}
+                <a href = "{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a>
+            {% endif %}
         {% endif %}
-    {% endif %}
-{% endfor %}
-</div>
-
-      {{ content }}
+    {% endfor %}
+    </div>
 
 {% include foot.html %}
