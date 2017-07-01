@@ -95,11 +95,12 @@ footer {
 
 .excerpt-block {
     background-color: #f7f7f7;
-    margin: 2% 10%;
-    padding: 10px 20px 20px 20px;
+    margin: 2% auto;
+    width: 80%;
+    padding: inherit;
 }
 
-.excerpt-block h3, .excerpt-block p { margin: 10px 0; }
+.excerpt-block h3 { margin: auto; }
 
 .excerpt-block:nth-child(2n) { background-color: #dfe3ee; }
 
@@ -137,7 +138,7 @@ nav > div { width: 50%; }
     font-size: 1.3em;
     margin: 0;
     padding: 2em 1em;
-
+    /*flex box*/
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -169,6 +170,8 @@ nav > div { width: 50%; }
         justify-content: space-around;
         background-color: #dfe3ee;
     }
+
+    .excerpt-block { width: 90%; }
 }
 
 @media screen and (max-width: 759px)
@@ -205,4 +208,6 @@ nav > div { width: 50%; }
     }
 
     .navbar li:last-of-type { border-bottom: none; }
+
+    .excerpt-block { width: 90%; }
 }
