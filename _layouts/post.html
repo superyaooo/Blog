@@ -2,14 +2,18 @@
 layout: default
 ---
 
-<small>Date: {{ page.date | date: "%B %-d, %Y" }}</small> ||
-<small>Tags:</small>
-{% for tag in page.tags %}
-<small class = "tag">
-  <a href="{{ site.baseurl }}/tags#{{ tag | slugify }}"> &raquo; {{ tag }}</a>
-</small>
-{% endfor %}
-
-<hr>
+<div class="post-head">
+    <div>
+        <em>{{ page.date | date: "%B %-d, %Y" }}</em>
+    </div>
+    <div>
+        <small>Tags:</small>
+        {% for tag in page.tags %}
+        <small class = "tag">
+          <a href="{{ site.baseurl }}/tags#{{ tag | slugify }}"> &raquo; {{ tag }}</a>
+        </small>
+        {% endfor %}
+    </div>
+</div>
 
 {{ content }}
