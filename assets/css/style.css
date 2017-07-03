@@ -107,15 +107,28 @@ footer {
 .tag {
     display: inline-block;
     border: 1px solid black;
-    padding: .3em .5em;
-    margin-right: .5em;
-    /*border-radius: 3%;*/
-    border-radius: 16px;
+    padding: .5em;
+    margin: .5em .5em .5em 0;
+    border-radius: 1em;
 }
 
 .tag > a, .post-date{ color: #424949; }
 
-.tag:hover { background-color: #e8f0f7; }
+.tag:hover { background-color: #dfe3ee; }
+
+.post-list {
+    margin: auto;
+    width: 80%;
+    padding-top: 30em;
+}
+
+.post-list > div { padding: 3em 5em; }
+
+.tag-list {
+    margin: auto;
+    width: 70%;
+    padding: 5em 0 5em 0;
+}
 
 nav {
     /*flex box*/
@@ -193,6 +206,9 @@ nav > div { width: 50%; }
 
     .post-head > div:first-child { width: 20%; }
     .post-head > div:nth-child(2) { width: 79%; }
+
+    .post-list { width: 100%; }
+    .tag-list { width: 80%; }
 }
 
 @media screen and (max-width: 759px)
@@ -243,4 +259,8 @@ nav > div { width: 50%; }
         width: 100%;
         text-align: left;
     }
+
+    .post-list { width: 100%; }
+    .tag-list { width: 100%; }
+    .post-list > div { padding: 3em 0; }
 }
