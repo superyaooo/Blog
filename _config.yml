@@ -11,4 +11,6 @@ site-url: https://github.com/superyaooo/Blog
 author-name: Yao Wang
 author-url: http://yaowangdev.com/
 
+# setting details
 excerpt_separator: <!--more-->
+permalink: pretty
