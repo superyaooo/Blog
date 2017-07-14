@@ -183,11 +183,7 @@ nav > div { width: 50%; }
     text-align: right;
 }
 
-/*TODO: button not working when in footer; need to adjust position*/
-
 #back-to-top {
-    position: fixed;
-    bottom: 1em;
     right: 1em;
     background-color: #f7f7f7;
     width: 3em;
