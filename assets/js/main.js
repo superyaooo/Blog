@@ -20,4 +20,6 @@ $('#back-to-top').click(function() {
     $('body,html').animate({
         scrollTop : 0
     }, 500);
+
+    // TODO - disable hover when on touchscreen
 });
