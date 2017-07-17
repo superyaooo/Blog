@@ -20,6 +20,14 @@ $('#back-to-top').click(function() {
     $('body,html').animate({
         scrollTop : 0
     }, 500);
+});
 
-    // TODO - disable hover when on touchscreen
+// disable hover effect on back-to-top button
+$(document).ready(function() {
+    if('ontouchstart' in window) {
+        $('#back-to-top').hover(function() {
+            $(this).css("transform", "none");
+            $(this).css("background-color", "#f7f7f7");
+        });
+    }
 });

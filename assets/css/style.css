@@ -201,6 +201,11 @@ nav > div { width: 50%; }
     transform: scale(1.1);
     background-color: #5a5a5a;
 }
+/*disable hover effect on touch devices*/
+/*html.can-touch #back-to-top:hover {
+    transform: none;
+    background-color: #f7f7f7;
+}*/
 
 #back-to-top:not(:hover) { color: black; }
 
