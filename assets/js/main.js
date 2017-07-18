@@ -23,7 +23,7 @@ $('#back-to-top').click(function() {
 });
 
 // disable hover effect on back-to-top button
-$(document).ready(function() {
+$(function() {
     if('ontouchstart' in window) {
         $('#back-to-top').hover(function() {
             $(this).css("transform", "none");

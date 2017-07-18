@@ -18,6 +18,11 @@ a {
 
 a:hover { color: #A2D9CE; }
 
+img {
+    max-width: 100%;
+    height: auto;
+}
+
 .page-header { padding: 2% 3%; }
 
 .page-header h1 {
@@ -208,6 +213,22 @@ nav > div { width: 50%; }
     position: relative;
     top: .4em;
     font-size: 1.5em;
+}
+
+.not-found {
+    display: inline-flex;
+    width: 90%;
+    margin: auto;
+}
+
+.not-found > div {
+    margin: auto;
+    padding: 1em;
+}
+
+.not-found li {
+    font-size: 1.2em;
+    padding: .3em;
 }
 
 @media screen and (min-width: 760px) and (max-width: 1195px)

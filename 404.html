@@ -1,0 +1,34 @@
+---
+layout: default
+---
+
+<div class="not-found">
+    <div>
+        <img alt="Page not found" src="{{ site.baseurl }}/assets/images/panda.jpg" id="img404-1" style="display:none" />
+        <img alt="Page not found" src="{{ site.baseurl }}/assets/images/poodle.jpg" id="img404-2" style="display:none" />
+    </div>
+    <div>
+        <h2>Oops!</h2>
+        <h3>The page you were looking for does not exist.</h3>
+        <p>
+            But no worries. You can find existing posts by visiting:
+            <ul>
+                <li><a href="{{ site.baseurl }}/allposts/">All posts</a></li>
+                <li><a href="{{ site.baseurl }}/tags/">Search by tags</a></li>
+            </ul>
+        </p>
+    </div>
+</div>
+
+<!-- show different 404 image on page load -->
+<script>
+    $(document).ready(function() {
+        var randomNum = Math.floor(Math.random()*10);
+        if(randomNum%2 == 0) {
+            $('#img404-1').css("display","");
+        }
+        else {
+            $('#img404-2').css("display","")
+        }
+    });
+</script>
