@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /404.html
 ---
 
 <div class="not-found">
@@ -22,7 +23,7 @@ layout: default
 
 <!-- show different 404 image on page load -->
 <script>
-    $(document).ready(function() {
+    $(function() {
         var randomNum = Math.floor(Math.random()*10);
         if(randomNum%2 == 0) {
             $('#img404-1').css("display","");
