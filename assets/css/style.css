@@ -216,9 +216,17 @@ nav > div { width: 50%; }
 }
 
 .not-found {
-    display: inline-flex;
-    width: 90%;
+    width: 100%;
     margin: auto;
+    /*flex box*/
+    display: -webkit-box;  /* iOS 6-, Safari 3.1-6 */
+    display: -moz-box;  /* Firefox 19 */
+    display: -ms-flexbox;  /* IE 10 */
+    display: -webkit-flex;  /* Chrome */
+    display: flex;  /* Opera 12.1, Firefox 20+ */
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    justify-content: space-around;
 }
 
 .not-found > div {
