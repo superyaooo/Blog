@@ -4,7 +4,6 @@ repository: superyaooo/Blog  # needed to avoid "No repo name found." error wh
 title: Coding & Blogging
 subtitle: beep boop beep beep boop...
 description: My tech blog via Github
-baseurl: /Blog
 site-url: https://github.com/superyaooo/Blog
 
 # Author
