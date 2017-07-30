@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Custom subdomain for your Github project pages site
+comments: true
 tags: [github, github pages, dreamhost]
 ---
 
