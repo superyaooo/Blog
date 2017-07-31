@@ -54,7 +54,9 @@ img {
 
 .main-content p, .main-content > ul { line-height: 1.5em;}
 
-.main-content > ul { font-size: 1.2em; }
+.main-content > ul, .main-content > ol { font-size: 1.2em; }
+
+.main-content > ul > li, .main-content > ol > li { padding-bottom: 1em;}
 
 footer {
     text-align: center;

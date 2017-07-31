@@ -11,13 +11,13 @@ Because it's a project pages site instead of a user pages site <!--more--> (see 
 If you haven't read Github's documentation on using custom domains, I suggest you [read it first](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) to get a general understanding. In my case, I wanted to set up a custom subdomain <em>blog.yaowangdev.com</em>. Here's what I did that made it work:
 * Follow Github's warning and add the custom subdomain to the Github Pages setting first, see documentation [here](https://help.github.com/articles/adding-or-removing-a-custom-domain-for-your-github-pages-site/).
 <br />
-![github warning]({{ site.baseurl }}/assets/images/posts/customdomainwarning.png)
+![github warning]({{ site.baseurl }}/assets/images/posts/customdomain-githubpages/customdomainwarning.png)
 * Then login to Dreamhost where your personal website is hosted (Dreamhost also has documentation on how to add a subdomain, read it [here](https://help.dreamhost.com/hc/en-us/articles/215457827-How-do-I-add-a-subdomain-)). Since Github already hosts the blog content, we need to add the subdomain as a custom DNS record to point to the actual Github server. To do that:
     * Go to <strong>Manage Domains</strong>
     * Find the domain you want to add the subdomain to, in my case it's <em>yaowangdev.com</em>
     * Click <strong>DNS</strong> under the domain, find the section to add a custom DNS record:
     <br />
-    ![add DNS record]({{ site.baseurl }}/assets/images/posts/DNSdreamhost.png)
+    ![add DNS record]({{ site.baseurl }}/assets/images/posts/customdomain-githubpages/DNSdreamhost.png)
     * For <strong>Name</strong>, put down your subdomain name only (in my case it's "blog")
     * for <strong>Type</strong> select "CNAME"
     * then for <strong>Value</strong> put down "<strong>YOUR-GITHUB-USERNAME</strong>.github.io" (in my case it's "superyaooo.github.io")
