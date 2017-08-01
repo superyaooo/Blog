@@ -4,7 +4,7 @@ title: Configure Tomcat with Spring Tool Suite on Mac
 tags: [tomcat, spring tool suite]
 ---
 
-Earlier today when I resumed to work on a SpringMVC project, the local Tomcat server in Spring Tool Suite (aka. Spring STS) refused to start up <strong>AGAIN</strong>. Since I've had similar issues in the past and had gone through lots of trouble to make it work again, it's only wise to write a post on how to (re)configure Tomcat in Spring STS on a Mac, to save some time in the future for me or anyone that's reading this post. <!--more-->
+Earlier today when I resumed to work on a SpringMVC project, the local Tomcat server in Spring Tool Suite (aka. Spring STS) refused to start up <strong>AGAIN</strong>. Since I've had similar issues in the past and had gone through lots of trouble to make it work again, it's only wise to write a post on how to (re)configure Tomcat in Spring STS on a Mac, to save some time in the future for me or anyone who's reading this post. <!--more-->
 
 Let's get started:
 1. If you already have a Tomcat server configured that stopped working all a sudden in Spring STS, delete the old server. Your <strong>Servers</strong> tab in STS should look like this - just like when you first started:
@@ -23,6 +23,9 @@ Let's get started:
 6. Add your project and click <strong>Finish</strong>.
 <br />
 ![add project]({{ site.baseurl }}/assets/images/posts/tomcat-sts/add-project.png)
-7. <strong>Et voilà!</strong> You have a running server now.
+
+<strong>Et voilà!</strong> You have a running server now.
 <br />
 ![running server]({{ site.baseurl }}/assets/images/posts/tomcat-sts/up-running.png)
+
+ ^ↀᴥↀ^
