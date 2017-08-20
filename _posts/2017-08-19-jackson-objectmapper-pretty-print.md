@@ -9,7 +9,7 @@ A couple weeks ago I used the Jackson ObjectMapper to convert an object into Jso
 ObjectMapper objectMapper = new ObjectMapper()
 String jsonStr = objectMapper.writeValueAsString(myObject)
 ```
-While it did work turning the object into a Json String, it looked like this in the email:<!--more-->
+While it did work turning the object into a Json string, it looked like this in the email:<!--more-->
 <br />
 ![flat json string]({{ site.baseurl }}/assets/images/posts/jackson-objectmapper/flat-json.png)
 
