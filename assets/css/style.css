@@ -54,9 +54,15 @@ img {
 
 .main-content p, .main-content > ul { line-height: 1.5em;}
 
-.main-content > ul, .main-content > ol { font-size: 1.2em; }
+.main-content > ul, .main-content > ol, .main-content code { font-size: 1.2em; }
 
 .main-content > ul > li, .main-content > ol > li { padding-bottom: 1em;}
+
+blockquote {
+    background-color: #f7f7f7;
+    margin-right: 5em;
+    padding: 0 .5em .3em .5em;
+}
 
 footer {
     text-align: center;
