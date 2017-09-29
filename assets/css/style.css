@@ -250,7 +250,17 @@ nav > div { width: 50%; }
     padding: .3em;
 }
 
-#comment { padding-top: 2em; }
+#comment {
+    margin-top: 5em;
+    padding: 2em;
+    background-color: #dfe3ee;
+}
+
+#comment-note {
+    padding-bottom: 1em;
+    text-align: center;
+    border-bottom: 1px outset white;
+}
 
 code {
     white-space: pre-wrap;
