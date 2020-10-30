@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Install and run MongoDB on mac
+title: Install and run MongoDB on macOS
 tags: [mongodb]
 ---
 Recently, I ran into an error trying to run mongodb locally on my mac. Error said cannot connect to the local server.<!--more--> It turned out that several steps have to be done in order to run MongoDB successfully on a mac ever since the 10.15 Catalina update. I followed the instructions in the MongoDB manual [here](https://docs.mongodb.com/manual/tutorial/install-mongodb-enterprise-on-os-x/).
