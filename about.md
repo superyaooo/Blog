@@ -18,4 +18,3 @@ You can find me here:
 * [yaowangdev.com](http://yaowangdev.com)
 * [LinkedIn](https://www.linkedin.com/in/wangyaooo)
 * [Github](https://github.com/superyaooo)
-* [Twitter](https://twitter.com/YaoWDev)
