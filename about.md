@@ -15,6 +15,6 @@ This blog is built via Github Pages. It has a custom stylesheet and Javascript. 
 My name is Yao Wang. Many people think I'm a front-end developer based on the fact that I have a personal website and web projects. However, I've been doing mostly back-end stuff with my real life job. Since I love both front-end and back-end development, I consider myself a full-stack developer.
 
 You can find me here:
-* [yaowangdev.com](http://yaowangdev.com)
+* [yaowangdev.com](https://yaowangdev.com)
 * [LinkedIn](https://www.linkedin.com/in/wangyaooo)
 * [Github](https://github.com/superyaooo)
