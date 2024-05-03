@@ -1,7 +1,7 @@
 ---
 layout: post
 title: MacOS update broke Xcode Command Line Tool
-tags: [xcode, git]
+tags: [xcode]
 ---
 Once again, the good old Xcode Command Line Tool on my machine disappeared(broke?) after a recent MacOS update to Mojave.
 
